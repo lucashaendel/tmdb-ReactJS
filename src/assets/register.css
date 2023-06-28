@@ -1,6 +1,4 @@
-/* #5e6668 */
-
-.container-regis {
+/* .container-regis {
   margin: auto;
   margin-top: 10vh;
   width: 70%;
@@ -46,7 +44,6 @@
 .options-regis {
   max-width: 25%;
   height: 100%;
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,4 +68,4 @@ a {
 
 a:hover {
   color: black;
-}
+} */

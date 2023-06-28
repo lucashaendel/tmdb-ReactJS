@@ -1,4 +1,4 @@
-.container-navbar {
+/* .container-navbar {
   width: 100%;
   height: 10vh;
   background-color: #729193;
@@ -12,8 +12,7 @@
   z-index: 1;
 }
 
-/* .logo-navbar {
-} */
+
 h1 {
   color: white;
   text-transform: uppercase;
@@ -59,4 +58,21 @@ h1:hover {
   padding: 10px 0;
   border-bottom: 1px solid;
   border-top: 1px solid;
+} */
+
+.container-navbar {
+  width: 100vw;
+  height: 10vh;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  color: yellowgreen;
+}
+
+.menu-navbar ul {
+  display: flex;
+  flex-direction: column;
 }
