@@ -34,7 +34,7 @@ const Series = () => {
 
   return (
     <div>
-      <h2>Peliculas</h2>
+      <h2>Series</h2>
 
       <form onSubmit={searchMovies} className="search">
         <input
@@ -42,7 +42,7 @@ const Series = () => {
           placeholder="buscar"
           onChange={(e) => setSearchKey(e.target.value)}
         />
-        <button>BUSCAR</button>
+        <button>&#128270;</button>
       </form>
       <div className="container mt-3">
         <div className="container-img">

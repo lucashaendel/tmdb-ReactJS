@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../assets/moviesAndTv.css";
+import { Navigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const Movies = () => {
   const apiUrl = "https://api.themoviedb.org/3";
@@ -41,7 +43,7 @@ const Movies = () => {
           placeholder="buscar"
           onChange={(e) => setSearchKey(e.target.value)}
         />
-        <button>BUSCAR</button>
+        <button>&#128270;</button>
       </form>
       <div className="container">
         <div className="container-img">
@@ -49,18 +51,17 @@ const Movies = () => {
             <div key={movie.id} className="img">
               <img
                 src={`${urlImage + movie.poster_path}`}
-                alt=""
-                width="55%"
                 className="img-poster"
               />
               <div className="capa">
                 <h3>{movie.title}</h3>
                 <p>{movie.overview}</p>
-                {}
-
-                <a href="/#" className="seeMore">
-                  Ver mas...
-                </a>
+                <p>Valoracion: {movie.vote_average}</p>
+                <p>Fecha: {movie.release_date}</p>
+                {/* <Link to={`/description`} params={movie} className="seeMore"> */}
+                <Link to={`/description/`} className="seeMore">
+                  <p>Ver mas...</p>
+                </Link>
                 <button type="submit" className="addToFavorites">
                   Agregar a favoritos
                 </button>
