@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Movies from "./commons/Movies";
 import Series from "./commons/Series";
+import Description from "./commons/Description";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setUser } from "./state/user";
@@ -26,6 +27,11 @@ const App = () => {
         <Route path="/login" element={<Login />}></Route>
 
         <Route path="/register" element={<Register />}></Route>
+        {/* <Route path="/description" element={<Description />}></Route> */}
+        <Route
+          path="/description"
+          // element={(movie) => <Description {...movie} pepe="variable" />}
+        ></Route>
       </Routes>
     </div>
   );
