@@ -1,0 +1,28 @@
+.footer {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 20.7vh;
+  margin-top: -1vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-footer {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.data-footer h3 {
+  font-size: 2em;
+}
+
+.data-footer p {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0.5vh auto;
+}

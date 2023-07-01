@@ -62,17 +62,18 @@ h1:hover {
 
 .container-navbar {
   width: 100vw;
-  height: 10vh;
-  background-color: red;
+  height: 7vh;
+  background-color: #3800d3;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-h1 {
-  color: yellowgreen;
+.container-navbar h1 {
+  color: #f0f0f0;
+  text-transform: uppercase;
 }
 
-.menu-navbar ul {
+/* .menu-navbar ul {
   display: flex;
   flex-direction: column;
-}
+} */
