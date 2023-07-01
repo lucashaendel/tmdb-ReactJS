@@ -2,12 +2,11 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Movies from "./commons/Movies";
-import Series from "./commons/Series";
-import Description from "./commons/Description";
+import MoviesAndTvs from "./commons/MoviesAndTvs";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setUser } from "./state/user";
+import Unico from "./commons/Home";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -19,16 +18,12 @@ const App = () => {
 
   return (
     <div>
-      <Routes>
-        <Route path="/movies" element={<Movies />}></Route>
-
-        <Route path="/series" element={<Series />}></Route>
-
+      {/* <Routes>
+        <Route path="/" element={<MoviesAndTvs />}></Route>
         <Route path="/login" element={<Login />}></Route>
-
         <Route path="/register" element={<Register />}></Route>
-        <Route path="/description" element={<Description />}></Route>
-      </Routes>
+      </Routes> */}
+      <MoviesAndTvs />
     </div>
   );
 };
