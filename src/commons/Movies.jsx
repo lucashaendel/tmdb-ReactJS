@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../assets/styles/moviesAndTv.css";
+// import "../assets/styles/moviesAndTv.css";
 import { Navigate } from "react-router";
 import { Link } from "react-router-dom";
 
