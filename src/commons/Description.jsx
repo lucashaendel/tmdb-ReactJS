@@ -1,13 +1,13 @@
 import React from "react";
 
-const Description = (movie) => {
+const Description = (props) => {
   return (
     <div>
       <p>movie</p>
       <p>asd</p>
-      <p>{movie}</p>
+      <p>{props.peli}</p>
       <p>asd</p>
-      <p>{movie}</p>
+      <p>{props.peli}</p>
       <p>asd</p>
     </div>
   );

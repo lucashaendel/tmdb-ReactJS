@@ -18,3 +18,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import "../src/assets/styles/login.css";
+@import "../src/assets/styles/moviesAndTv.css";
+@import "../src/assets/styles/navbar.css";
+@import "../src/assets/styles/register.css";

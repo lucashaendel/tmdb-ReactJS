@@ -27,11 +27,7 @@ const App = () => {
         <Route path="/login" element={<Login />}></Route>
 
         <Route path="/register" element={<Register />}></Route>
-        {/* <Route path="/description" element={<Description />}></Route> */}
-        <Route
-          path="/description"
-          // element={(movie) => <Description {...movie} pepe="variable" />}
-        ></Route>
+        <Route path="/description" element={<Description />}></Route>
       </Routes>
     </div>
   );

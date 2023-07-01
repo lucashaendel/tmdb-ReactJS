@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../assets/register.css";
+// import "../assets/register.css";
 // import { useSelector } from "react-redux";
 
 const Register = () => {

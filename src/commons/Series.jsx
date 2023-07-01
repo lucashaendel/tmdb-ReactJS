@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../assets/moviesAndTv.css";
+// import "../assets/moviesAndTv.css";
 
 const Series = () => {
   const apiUrl = "https://api.themoviedb.org/3";
