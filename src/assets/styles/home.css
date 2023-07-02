@@ -2,11 +2,13 @@
   margin-top: 2vh;
   height: 65vh;
   position: relative;
+  /* overflow: hidden; */
 }
 
 .container-home img {
   /* width: 240vw; */
   height: 65vh;
+  max-width: 100vw;
 }
 
 .container-home .capa {
