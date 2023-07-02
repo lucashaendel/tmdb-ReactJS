@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Unico from "./Home";
 import { Link, Navigate } from "react-router-dom";
+import Aos from "aos";
 
 const MoviesAndTvs = () => {
   const [prop, setProp] = useState("");
@@ -40,6 +41,10 @@ const MoviesAndTvs = () => {
   useEffect(() => {
     fetchResult();
   }, [prop]);
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return prop === "" ? (
     <div className="container-header">
@@ -92,7 +97,7 @@ const MoviesAndTvs = () => {
       </div>
       <div className="container">
         {moviesAndTvs.map((movieAndTv) => (
-          <div className="container-general">
+          <div className="container-general" data-aos="fade-down">
             <div className="dataMovie">
               <h3>{movieAndTv.name ? movieAndTv.name : movieAndTv.title}</h3>
             </div>

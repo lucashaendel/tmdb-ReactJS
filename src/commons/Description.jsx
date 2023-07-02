@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
+import Aos from "aos";
 
 export const Description = () => {
   const id = useParams();
   const result = useLocation().state;
   console.log(result);
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="container-description">
@@ -13,15 +17,19 @@ export const Description = () => {
           src={`https://image.tmdb.org/t/p/original${result.poster_path}`}
           alt="poster"
           className="poster"
+          data-aos="fade-down"
         />
         <img
           src={`https://image.tmdb.org/t/p/original${result.backdrop_path}`}
           alt="backdrop"
           className="backdrop"
+          data-aos="fade-down"
         />
-        <div className="data-description">
-          <h2>{result.name ? result.name : result.title}</h2>
-          <p>{result.overview}</p>
+        <div className="data-description" data-aos="fade-up">
+          <h2 data-aos="fade-right">
+            {result.name ? result.name : result.title}
+          </h2>
+          <p data-aos="fade-up">{result.overview}</p>
           <p>
             <span>Valoracion: </span>
             {result.vote_average}
