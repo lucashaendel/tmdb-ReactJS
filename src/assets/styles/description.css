@@ -1,0 +1,71 @@
+.container-description {
+  width: 100vw;
+  height: 93vh;
+  position: relative;
+}
+
+.poster {
+  width: 100%;
+  position: relative;
+}
+
+.backdrop {
+  width: 0%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.data-description {
+  width: 100%;
+  padding: 5%;
+  height: 41vh;
+  text-align: center;
+  margin: auto;
+  margin: 1vh auto;
+  /* background-color: #571df5; */
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 50vh;
+  border-radius: 50px;
+  overflow-y: scroll;
+  font-size: 1rem;
+}
+
+.data-description > h2 {
+  /* color: #f0f0f0; */
+  color: #3800d3;
+  text-transform: uppercase;
+  margin: 1vh auto;
+  margin-top: 3vh;
+}
+
+.data-description > p {
+  width: 85vw;
+  margin: 1vh auto;
+}
+
+.data-description > p > span {
+  font-weight: bold;
+}
+
+.data-datos {
+  display: flex;
+  justify-content: space-around;
+  margin: 2vh 0;
+}
+
+.data-datos > p > span {
+  /* color: #3800d3; */
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+
+.data-play button {
+  position: absolute;
+  background-color: transparent;
+  bottom: 35vh;
+  right: 0;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
