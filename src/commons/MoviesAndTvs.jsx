@@ -92,7 +92,7 @@ const MoviesAndTvs = () => {
       </div>
       <div className="container">
         {moviesAndTvs.map((movieAndTv) => (
-          <>
+          <div className="container-general">
             <div className="dataMovie">
               <h3>{movieAndTv.name ? movieAndTv.name : movieAndTv.title}</h3>
             </div>
@@ -113,7 +113,7 @@ const MoviesAndTvs = () => {
                 <p>{movieAndTv.vote_average.toFixed(1)}</p>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
