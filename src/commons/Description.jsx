@@ -14,15 +14,15 @@ export const Description = () => {
     <div className="container-description">
       <div className="card-description">
         <img
-          src={`https://image.tmdb.org/t/p/original${result.poster_path}`}
-          alt="poster"
-          className="poster"
-          data-aos="fade-down"
-        />
-        <img
           src={`https://image.tmdb.org/t/p/original${result.backdrop_path}`}
           alt="backdrop"
           className="backdrop"
+          data-aos="fade-down"
+        />
+        <img
+          src={`https://image.tmdb.org/t/p/original${result.poster_path}`}
+          alt="poster"
+          className="poster"
           data-aos="fade-down"
         />
         <div className="data-description" data-aos="fade-up">
