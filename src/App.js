@@ -7,6 +7,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setUser } from "./state/user";
 import Unico from "./commons/Home";
+import { Description } from "./commons/Description";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -18,12 +19,14 @@ const App = () => {
 
   return (
     <div>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<MoviesAndTvs />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
-      </Routes> */}
-      <MoviesAndTvs />
+        {/* <Route path="/description/:id" element={<Description />}></Route> */}
+        <Route path="/description/:id" element={<Description />}></Route>
+      </Routes>
+      {/* <MoviesAndTvs /> */}
     </div>
   );
 };
