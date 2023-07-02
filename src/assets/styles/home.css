@@ -2,11 +2,9 @@
   margin-top: 2vh;
   height: 65vh;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .container-home img {
-  /* width: 240vw; */
   height: 65vh;
   max-width: 100vw;
 }
@@ -77,4 +75,42 @@
   background-color: #3800d3a4;
 
   font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .container-home {
+    width: 100vw;
+    height: 65vh;
+  }
+  .container-home img {
+    height: 100%;
+    width: 100vw;
+  }
+  .container-home .capa {
+    position: absolute;
+    top: 0vh;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #00000000 0%,
+      #0400555f 25%,
+      #020024 100%
+    );
+  }
+  .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan {
+    margin-top: 0;
+  }
+  .suscription {
+    width: 50vw;
+  }
+  .formulario-Suscripcion {
+    width: 30vw;
+  }
 }
