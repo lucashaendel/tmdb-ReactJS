@@ -110,6 +110,9 @@
   }
   .slogan h3 {
     font-size: 3em;
+    color: #fff;
+    padding-left: 0.5vw;
+    font-size: 1em;
   }
   .suscription {
     width: 40vw;
@@ -119,14 +122,19 @@
     width: 20vw;
   }
 
+  .formulario-Suscripcion input {
+    color: #fff;
+    padding-left: 0.5vw;
+    font-size: 0.8em;
+  }
   .formulario-Suscripcion input::placeholder {
     color: #fff;
-    padding-left: 5vw;
-    font-size: 1.3em;
+    padding-left: 0.5vw;
+    font-size: 0.8em;
   }
 
   .formulario-Suscripcion button {
-    font-size: 1em;
-    width: 80%;
+    font-size: 0.8em;
+    width: 90%;
   }
 }
