@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Loading = () => {
+const Loading = () => {
   return (
     <div className="loading">
       <svg
@@ -24,6 +24,8 @@ export const Loading = () => {
           />
         </path>
       </svg>
+      <h2>Cargando...</h2>
     </div>
   );
 };
+export default Loading;

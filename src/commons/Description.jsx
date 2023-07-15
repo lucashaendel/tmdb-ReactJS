@@ -1,16 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Aos from "aos";
+import Loading from "./Loading";
 
 export const Description = () => {
+  const [loading, setLoading] = useState(true);
   const id = useParams();
   const result = useLocation().state;
-  console.log(result);
   useEffect(() => {
     Aos.init();
+    setTimeout(() => {
+      setLoading(false);
+    }, 300);
   }, []);
 
-  return (
+  return loading ? (
+    <Loading />
+  ) : (
     <div className="container-description">
       <div className="card-description">
         <img

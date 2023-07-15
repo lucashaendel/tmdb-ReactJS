@@ -3,8 +3,10 @@ import axios from "axios";
 import Unico from "./Home";
 import { Link, Navigate } from "react-router-dom";
 import Aos from "aos";
+import Loading from "./Loading";
 
 const MoviesAndTvs = () => {
+  const [loading, setLoading] = useState(true);
   const [prop, setProp] = useState("");
   const handleAlgo2 = () => {
     setProp("series");
@@ -44,7 +46,14 @@ const MoviesAndTvs = () => {
 
   useEffect(() => {
     Aos.init();
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
+
+  // useEffect(() => {
+
+  // }, []);
 
   return prop === "" ? (
     <div className="container-header">
@@ -54,6 +63,8 @@ const MoviesAndTvs = () => {
       </div>
       <Unico />
     </div>
+  ) : loading ? (
+    <Loading />
   ) : (
     <div>
       <div className="container-header">
